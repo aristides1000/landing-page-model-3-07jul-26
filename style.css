@@ -1,0 +1,268 @@
+:root {
+    --primary: #02529c; /* Azul Deportivo */
+    --primary-hover: #013e78;
+    --gold: #d4af37; /* Dorado de la Copa */
+    --dark: #0b0f19;
+    --light: #f3f4f6;
+    --white: #ffffff;
+    --text-muted: #6b7280;
+    --font: 'Segoe UI', system-ui, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font);
+    background-color: var(--light);
+    color: var(--dark);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--white);
+    border-bottom: 2px solid #e5e7eb;
+    padding: 1.2rem 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: 900;
+    font-size: 1.4rem;
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.logo span {
+    color: var(--gold);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--dark);
+    font-weight: 700;
+    font-size: 0.95rem;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: var(--primary);
+}
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.hero {
+    padding: 4rem 1rem;
+    text-align: center;
+    background: linear-gradient(135deg, #e0f2fe 0%, #f0fdf4 100%);
+    border-radius: 16px;
+    margin-bottom: 3rem;
+    box-shadow: inset 0 0 40px rgba(2, 82, 156, 0.05);
+}
+
+.badge {
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 0.4rem 1.2rem;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    display: inline-block;
+    margin-bottom: 1.5rem;
+}
+
+.hero h1 {
+    font-size: 2.4rem;
+    color: var(--primary);
+    margin-bottom: 1.2rem;
+    font-weight: 900;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    color: #374151;
+    max-width: 700px;
+    margin: 0 auto 2.5rem auto;
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--gold);
+    color: var(--dark);
+    text-decoration: none;
+    padding: 1rem 2.5rem;
+    border-radius: 50px;
+    font-weight: 700;
+    transition: all 0.2s;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(212, 175, 55, 0.3);
+}
+
+.btn:hover {
+    background-color: #c5a028;
+    transform: translateY(-1px);
+}
+
+.section-title {
+    text-align: center;
+    font-size: 1.9rem;
+    margin-bottom: 0.5rem;
+    color: var(--primary);
+    font-weight: 800;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: var(--text-muted);
+    max-width: 600px;
+    margin: 0 auto 3rem auto;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-bottom: 4rem;
+}
+
+.card {
+    background-color: var(--white);
+    padding: 2.5rem 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e5e7eb;
+}
+
+.card-icon {
+    font-size: 2.2rem;
+    margin-bottom: 0.75rem;
+}
+
+.card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.75rem;
+    color: var(--primary);
+}
+
+.card p {
+    color: #4b5563;
+    font-size: 0.95rem;
+}
+
+.registration-block {
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 3.5rem 2rem;
+    border-radius: 16px;
+    max-width: 600px;
+    margin: 0 auto 4rem auto;
+    box-shadow: 0 20px 25px -5px rgba(2, 82, 156, 0.2);
+}
+
+.registration-block h2 {
+    text-align: center;
+    margin-bottom: 0.5rem;
+    font-size: 1.7rem;
+    font-weight: 800;
+}
+
+.registration-block p {
+    text-align: center;
+    color: #93c5fd;
+    margin-bottom: 2.5rem;
+    font-size: 0.95rem;
+}
+
+.form-group {
+    margin-bottom: 1.25rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    color: #f0fdf4;
+}
+
+.form-control {
+    width: 100%;
+    padding: 0.85rem 1.2rem;
+    border-radius: 30px;
+    border: 1px solid #2563eb;
+    background-color: #1d4ed8;
+    color: var(--white);
+    font-size: 1rem;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: var(--gold);
+    background-color: var(--primary);
+}
+
+.registration-block .btn {
+    width: 100%;
+    margin-top: 1rem;
+    background-color: var(--gold);
+}
+
+footer {
+    background-color: var(--dark);
+    color: #9ca3af;
+    padding: 2.5rem 1rem;
+    font-size: 0.9rem;
+}
+
+.footer-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.footer-links a {
+    color: #4b5563;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: var(--white);
+}
+
+@media (min-width: 768px) {
+    .hero h1 { font-size: 3.2rem; }
+    .benefits-grid { grid-template-columns: repeat(3, 1fr); }
+    .footer-container { flex-direction: row; justify-content: space-between; }
+}

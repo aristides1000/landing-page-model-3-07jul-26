@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundial 2026 - Fan Zone Oficial</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <header role="banner">
+        <div class="header-container">
+            <a href="#" class="logo" aria-label="Inicio">
+                🌎 MUNDIAL<span>2026</span>
+            </a>
+            <nav role="navigation" aria-label="Menú de navegación">
+                <ul>
+                    <li><a href="#sedes">Sedes</a></li>
+                    <li><a href="#boletos">Preventa</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content" role="main">
+
+        <section class="hero" aria-label="Sección de bienvenida">
+            <span class="badge">Norteamérica 2026</span>
+            <h1>La Mayor Cita de la Historia</h1>
+            <p>Por primera vez con 48 selecciones uniendo a tres naciones. No te quedes fuera del torneo de fútbol más grande y espectacular jamás visto.</p>
+            <a href="#boletos" class="btn" role="button">Registrarse en la Preventa</a>
+        </section>
+
+        <section id="sedes" aria-labelledby="sedes-heading">
+            <h2 id="sedes-heading" class="section-title">Tres Países, Un Solo Sentimiento</h2>
+            <p class="section-subtitle">Una infraestructura sin precedentes repartida a lo largo de los estadios más modernos del continente.</p>
+            
+            <div class="benefits-grid">
+                <article class="card">
+                    <div class="card-icon" aria-hidden="true">🍁</div>
+                    <h3>Canadá</h3>
+                    <p>Ciudades anfitrionas con ambientes multiculturales listas para albergar la pasión de la hinchada global con estadios de primer nivel.</p>
+                </article>
+
+                <article class="card">
+                    <div class="card-icon" aria-hidden="true">🦅</div>
+                    <h3>Estados Unidos</h3>
+                    <p>Los recintos con mayor capacidad tecnológica del mundo listos para las fases críticas del torneo y la gran final.</p>
+                </article>
+
+                <article class="card">
+                    <div class="card-icon" aria-hidden="true">🦅</div>
+                    <h3>México</h3>
+                    <p>La cuna histórica de la magia futbolística mundialista, abriendo las puertas de catedrales legendarias con su tradicional calidez.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="boletos" aria-labelledby="form-heading">
+            <div class="registration-block">
+                <h2 id="form-heading">Acceso Prioritario a Entradas</h2>
+                <p>Regístrate en nuestra lista exclusiva para recibir alertas de disponibilidad de boletos, paquetes de hospitalidad y sorteos oficiales de la FIFA.</p>
+                
+                <form action="#" method="POST" autocomplete="on">
+                    <div class="form-group">
+                        <label for="full-name">Nombre Completo</label>
+                        <input type="text" id="full-name" name="name" class="form-control" required placeholder="Ej. Carlos Silva" aria-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="country-selection">Selección Favorita</label>
+                        <input type="text" id="country-selection" name="country" class="form-control" required placeholder="Ej. Venezuela" aria-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="user-email">Correo Electrónico</label>
+                        <input type="email" id="user-email" name="email" class="form-control" required placeholder="carlos@correo.com" aria-required="true">
+                    </div>
+                    <button type="submit" class="btn">Unirse a la Lista Oficial</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer role="contentinfo">
+        <div class="footer-container">
+            <p>&copy; 2026 Plataforma Informativa de Fanáticos. No afiliada oficialmente a FIFA.</p>
+            <div class="footer-links">
+                <a href="#">Guía del Viajero</a>
+                <a href="#">Políticas</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
